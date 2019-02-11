@@ -1,0 +1,136 @@
+<!-- 
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="GoTransit.ca" />
+  <xs:element name="ReturnValueOfListOfStationStatus" nillable="true" type="ReturnValueOfListOfStationStatus" />
+  <xs:complexType name="ReturnValueOfListOfStationStatus">
+    <xs:complexContent mixed="false">
+      <xs:extension base="GOBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Data" type="ArrayOfStationStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GOBase">
+    <xs:attribute name="ErrCode" type="xs:int" use="required" />
+    <xs:attribute name="ErrMsg" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="ArrayOfStationStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StationStatus" nillable="true" type="StationStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StationStatus">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="GoTransit.ca" base="q1:GOTripStopMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="StoppingAtList" type="ArrayOfStoppingAtDisplay" />
+        </xs:sequence>
+        <xs:attribute name="UnionArrivePlatform" type="xs:string" />
+        <xs:attribute name="UnionDepartPlatform" type="xs:string" />
+        <xs:attribute name="UnionArrivalDepartureTime" type="xs:string" />
+        <xs:attribute name="StopListString" type="xs:string" />
+        <xs:attribute name="ServiceCd" type="xs:string" />
+        <xs:attribute name="StoppingAt" type="xs:string" />
+        <xs:attribute name="StoppingAtIsCancelled" type="xs:boolean" use="required" />
+        <xs:attribute name="UnionPlatformActualOverrided" type="xs:boolean" use="required" />
+        <xs:attribute name="StatusTimeStamp" type="xs:string" />
+        <xs:attribute name="OnGridDisplayed" type="xs:boolean" use="required" />
+        <xs:attribute name="RowIndex" type="xs:int" use="required" />
+        <xs:attribute name="EstimatedArrival" type="xs:dateTime" use="required" />
+        <xs:attribute name="TrackActualOverrided" type="xs:boolean" use="required" />
+        <xs:attribute name="StopAtIndex" type="xs:int" use="required" />
+        <xs:attribute name="TripCancelled" type="xs:boolean" use="required" />
+        <xs:attribute name="ArriveIn" type="xs:string" />
+        <xs:attribute name="DirectionCd" type="xs:string" />
+        <xs:attribute name="DirectionIndex" type="xs:int" use="required" />
+        <xs:attribute name="DepartTxt" type="xs:string" />
+        <xs:attribute name="Direction" type="xs:string" />
+        <xs:attribute name="TripNumber" type="xs:string" />
+        <xs:attribute name="Expected" type="xs:string" />
+        <xs:attribute name="ExtraRemark" type="xs:string" />
+        <xs:attribute name="ArriveTxt" type="xs:string" />
+        <xs:attribute name="Delay" type="xs:int" use="required" />
+        <xs:attribute name="DelaySec" type="xs:int" use="required" />
+        <xs:attribute name="DelayDesc" type="xs:string" />
+        <xs:attribute name="IsRunningTrip" type="xs:boolean" use="required" />
+        <xs:attribute name="DetailTxt" type="xs:string" />
+        <xs:attribute name="ScheduledTime" type="xs:string" />
+        <xs:attribute name="HasActualTime" type="xs:boolean" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfStoppingAtDisplay">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StoppingAtDisplay" nillable="true" type="StoppingAtDisplay" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StoppingAtDisplay">
+    <xs:attribute name="StopDisplay" type="xs:string" />
+    <xs:attribute name="IsCancelled" type="xs:boolean" use="required" />
+  </xs:complexType>
+</xs:schema> 
+-->
+
+<ReturnValueOfListOfStationStatus ErrCode="2147483647" ErrMsg="String content">
+  <Data>
+    <StationStatus UnionArrivePlatform="String content" UnionDepartPlatform="String content" UnionArrivalDepartureTime="String content" StopListString="String content" ServiceCd="String content" StoppingAt="String content" StoppingAtIsCancelled="true" UnionPlatformActualOverrided="true" StatusTimeStamp="String content" OnGridDisplayed="true" RowIndex="2147483647" EstimatedArrival="1999-05-31T11:20:00" TrackActualOverrided="true" StopAtIndex="2147483647" TripCancelled="true" ArriveIn="String content" DirectionCd="String content" DirectionIndex="2147483647" DepartTxt="String content" Direction="String content" TripNumber="String content" Expected="String content" ExtraRemark="String content" ArriveTxt="String content" Delay="2147483647" DelaySec="2147483647" DelayDesc="String content" IsRunningTrip="true" DetailTxt="String content" ScheduledTime="String content" HasActualTime="true" TripName="String content" Destination="String content" Track="String content" Actual="1999-05-31T11:20:00" Scheduled="1999-05-31T11:20:00">
+      <Messages xmlns="GoTransit.ca">
+        <GOVisualMessageText Language="String content" Text="String content" />
+        <GOVisualMessageText Language="String content" Text="String content" />
+      </Messages>
+      <Remarks xmlns="GoTransit.ca">
+        <GOVisualMessageText Language="String content" Text="String content" />
+        <GOVisualMessageText Language="String content" Text="String content" />
+      </Remarks>
+      <StopsList xmlns="GoTransit.ca">
+        <GOStopMessage StopName="String content" StopCode="String content" StatusCode="String content">
+          <StatusText>
+            <GOVisualMessageText Language="String content" Text="String content" />
+            <GOVisualMessageText Language="String content" Text="String content" />
+          </StatusText>
+        </GOStopMessage>
+        <GOStopMessage StopName="String content" StopCode="String content" StatusCode="String content">
+          <StatusText>
+            <GOVisualMessageText Language="String content" Text="String content" />
+            <GOVisualMessageText Language="String content" Text="String content" />
+          </StatusText>
+        </GOStopMessage>
+      </StopsList>
+      <TrackAttr Background="String content" Foreground="String content" Blink="true" Bold="true" Italics="true" Underline="true" xmlns="GoTransit.ca" />
+      <StoppingAtList>
+        <StoppingAtDisplay StopDisplay="String content" IsCancelled="true" />
+        <StoppingAtDisplay StopDisplay="String content" IsCancelled="true" />
+      </StoppingAtList>
+    </StationStatus>
+    <StationStatus UnionArrivePlatform="String content" UnionDepartPlatform="String content" UnionArrivalDepartureTime="String content" StopListString="String content" ServiceCd="String content" StoppingAt="String content" StoppingAtIsCancelled="true" UnionPlatformActualOverrided="true" StatusTimeStamp="String content" OnGridDisplayed="true" RowIndex="2147483647" EstimatedArrival="1999-05-31T11:20:00" TrackActualOverrided="true" StopAtIndex="2147483647" TripCancelled="true" ArriveIn="String content" DirectionCd="String content" DirectionIndex="2147483647" DepartTxt="String content" Direction="String content" TripNumber="String content" Expected="String content" ExtraRemark="String content" ArriveTxt="String content" Delay="2147483647" DelaySec="2147483647" DelayDesc="String content" IsRunningTrip="true" DetailTxt="String content" ScheduledTime="String content" HasActualTime="true" TripName="String content" Destination="String content" Track="String content" Actual="1999-05-31T11:20:00" Scheduled="1999-05-31T11:20:00">
+      <Messages xmlns="GoTransit.ca">
+        <GOVisualMessageText Language="String content" Text="String content" />
+        <GOVisualMessageText Language="String content" Text="String content" />
+      </Messages>
+      <Remarks xmlns="GoTransit.ca">
+        <GOVisualMessageText Language="String content" Text="String content" />
+        <GOVisualMessageText Language="String content" Text="String content" />
+      </Remarks>
+      <StopsList xmlns="GoTransit.ca">
+        <GOStopMessage StopName="String content" StopCode="String content" StatusCode="String content">
+          <StatusText>
+            <GOVisualMessageText Language="String content" Text="String content" />
+            <GOVisualMessageText Language="String content" Text="String content" />
+          </StatusText>
+        </GOStopMessage>
+        <GOStopMessage StopName="String content" StopCode="String content" StatusCode="String content">
+          <StatusText>
+            <GOVisualMessageText Language="String content" Text="String content" />
+            <GOVisualMessageText Language="String content" Text="String content" />
+          </StatusText>
+        </GOStopMessage>
+      </StopsList>
+      <TrackAttr Background="String content" Foreground="String content" Blink="true" Bold="true" Italics="true" Underline="true" xmlns="GoTransit.ca" />
+      <StoppingAtList>
+        <StoppingAtDisplay StopDisplay="String content" IsCancelled="true" />
+        <StoppingAtDisplay StopDisplay="String content" IsCancelled="true" />
+      </StoppingAtList>
+    </StationStatus>
+  </Data>
+</ReturnValueOfListOfStationStatus>

@@ -1,0 +1,22 @@
+<!-- 
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ReturnStringValue" nillable="true" type="ReturnStringValue" />
+  <xs:complexType name="ReturnStringValue">
+    <xs:complexContent mixed="false">
+      <xs:extension base="GOBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Data" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GOBase">
+    <xs:attribute name="ErrCode" type="xs:int" use="required" />
+    <xs:attribute name="ErrMsg" type="xs:string" />
+  </xs:complexType>
+</xs:schema> 
+-->
+
+<ReturnStringValue ErrCode="2147483647" ErrMsg="String content">
+  <Data>String content</Data>
+</ReturnStringValue>

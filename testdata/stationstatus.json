@@ -1,0 +1,932 @@
+{
+	"TripStatus": [{
+		"RowIndex": 0,
+		"TripNumber": "726",
+		"Expected": "17:47",
+		"ExtraRemark": "Earlier passenger assist alarm",
+		"Direction": "Westbound to Union",
+		"DirectionCd": "Inbound",
+		"DirectionIndex": 1,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "17:47",
+		"ScheduledTime": "17:40",
+		"HasActualTime": true,
+		"IsRunningTrip": false,
+		"Delay": 7,
+		"DelaySec": 420,
+		"DelayDesc": "7 minutes",
+		"ArriveIn": "13 minutes",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station.",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549666020000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station.",
+			"IsCancelled": false
+		}],
+		"Messages": [],
+		"Remarks": [{
+			"Language": "English",
+			"Text": "Earlier passenger assist alarm"
+		}],
+		"StopsList": [{
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549666020000)\/",
+		"Scheduled": "\/Date(1549665600000)\/",
+		"Track": "13",
+		"TripName": null,
+		"Destination": "Union Station"
+	}, {
+		"RowIndex": 1,
+		"TripNumber": "925",
+		"Expected": "On Time",
+		"ExtraRemark": "",
+		"Direction": "Westbound to Union",
+		"DirectionCd": "Inbound",
+		"DirectionIndex": 1,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "On Time",
+		"ScheduledTime": "17:40",
+		"HasActualTime": true,
+		"IsRunningTrip": false,
+		"Delay": 0,
+		"DelaySec": 0,
+		"DelayDesc": "--",
+		"ArriveIn": "6 minutes",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station.",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549665600000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station.",
+			"IsCancelled": false
+		}],
+		"Messages": [],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549665600000)\/",
+		"Scheduled": "\/Date(1549665600000)\/",
+		"Track": "3",
+		"TripName": null,
+		"Destination": "Union Station"
+	}, {
+		"RowIndex": 2,
+		"TripNumber": "483",
+		"Expected": "Departed",
+		"ExtraRemark": "",
+		"Direction": "Eastbound towards Oshawa",
+		"DirectionCd": "Outbound",
+		"DirectionIndex": 2,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "Departed",
+		"ScheduledTime": "17:30",
+		"HasActualTime": false,
+		"IsRunningTrip": false,
+		"Delay": 2,
+		"DelaySec": 120,
+		"DelayDesc": "2 minutes",
+		"ArriveIn": "--",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station - Clarkson GO -",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station - Clarkson GO -|Oakville GO - Bronte GO -|Appleby GO - Burlington GO -|Aldershot GO - Hamilton GO Centre.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549665000000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station - Clarkson GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Oakville GO - Bronte GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Appleby GO - Burlington GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Aldershot GO - Hamilton GO Centre.",
+			"IsCancelled": false
+		}],
+		"Messages": [{
+			"Language": "English",
+			"Text": "Departed"
+		}, {
+			"Language": "French",
+			"Text": "Quitté la gare"
+		}],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [{
+				"Language": "English",
+				"Text": "Departed"
+			}, {
+				"Language": "French",
+				"Text": "Quitté la gare"
+			}],
+			"StatusCode": "DP",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "7",
+			"StopName": "Clarkson GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "6",
+			"StopName": "Oakville GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "5",
+			"StopName": "Bronte GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "4",
+			"StopName": "Appleby GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "3",
+			"StopName": "Burlington GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "2",
+			"StopName": "Aldershot GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "1",
+			"StopName": "Hamilton GO Centre"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549665120000)\/",
+		"Scheduled": "\/Date(1549665000000)\/",
+		"Track": "4",
+		"TripName": null,
+		"Destination": "Hamilton GO Centre"
+	}, {
+		"RowIndex": 3,
+		"TripNumber": "835",
+		"Expected": "Departed",
+		"ExtraRemark": "",
+		"Direction": "Eastbound towards Oshawa",
+		"DirectionCd": "Outbound",
+		"DirectionIndex": 2,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "Departed",
+		"ScheduledTime": "17:30",
+		"HasActualTime": false,
+		"IsRunningTrip": false,
+		"Delay": 1,
+		"DelaySec": 60,
+		"DelayDesc": "1 minute",
+		"ArriveIn": "--",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station - Oriole GO -",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station - Oriole GO -|Old Cummer GO - Langstaff GO -|Richmond Hill GO - Gormley GO.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549665000000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station - Oriole GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Old Cummer GO - Langstaff GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Richmond Hill GO - Gormley GO.",
+			"IsCancelled": false
+		}],
+		"Messages": [{
+			"Language": "English",
+			"Text": "Departed"
+		}, {
+			"Language": "French",
+			"Text": "Quitté la gare"
+		}],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [{
+				"Language": "English",
+				"Text": "Departed"
+			}, {
+				"Language": "French",
+				"Text": "Quitté la gare"
+			}],
+			"StatusCode": "DP",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "676",
+			"StopName": "Oriole GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "36",
+			"StopName": "Old Cummer GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "37",
+			"StopName": "Langstaff GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "38",
+			"StopName": "Richmond Hill GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "5041",
+			"StopName": "Gormley GO"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549665060000)\/",
+		"Scheduled": "\/Date(1549665000000)\/",
+		"Track": "1",
+		"TripName": null,
+		"Destination": "Gormley GO"
+	}, {
+		"RowIndex": 4,
+		"TripNumber": "432",
+		"Expected": "Arrived",
+		"ExtraRemark": "",
+		"Direction": "Eastbound towards Oshawa",
+		"DirectionCd": "Outbound",
+		"DirectionIndex": 2,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "Arrived",
+		"ScheduledTime": "17:35",
+		"HasActualTime": false,
+		"IsRunningTrip": false,
+		"Delay": 0,
+		"DelaySec": 0,
+		"DelayDesc": "--",
+		"ArriveIn": "1 minute",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station - Pickering GO -",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station - Pickering GO -|Ajax GO - Whitby GO -|Oshawa GO.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549665300000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station - Pickering GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Ajax GO - Whitby GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Oshawa GO.",
+			"IsCancelled": false
+		}],
+		"Messages": [{
+			"Language": "English",
+			"Text": "Arrived"
+		}, {
+			"Language": "French",
+			"Text": "Arrivé"
+		}],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [{
+				"Language": "English",
+				"Text": "Arrived"
+			}, {
+				"Language": "French",
+				"Text": "Arrivé"
+			}],
+			"StatusCode": "AR",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "914",
+			"StopName": "Pickering GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "18",
+			"StopName": "Ajax GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "19",
+			"StopName": "Whitby GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "20",
+			"StopName": "Oshawa GO"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549665300000)\/",
+		"Scheduled": "\/Date(1549665300000)\/",
+		"Track": "12",
+		"TripName": null,
+		"Destination": "Oshawa GO"
+	}, {
+		"RowIndex": 5,
+		"TripNumber": "801",
+		"Expected": "Arrived",
+		"ExtraRemark": "",
+		"Direction": "Eastbound towards Oshawa",
+		"DirectionCd": "Outbound",
+		"DirectionIndex": 2,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "Arrived",
+		"ScheduledTime": "17:35",
+		"HasActualTime": false,
+		"IsRunningTrip": false,
+		"Delay": 0,
+		"DelaySec": 0,
+		"DelayDesc": "--",
+		"ArriveIn": "1 minute",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station - Downsview Park GO -",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station - Downsview Park GO -|York University GO - Rutherford GO -|Maple GO - King City GO -|Aurora GO - Newmarket GO -|East Gwillimbury GO - Bradford GO -|Barrie South GO - Allandale Waterfront GO.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549665300000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station - Downsview Park GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "York University GO - Rutherford GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Maple GO - King City GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Aurora GO - Newmarket GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "East Gwillimbury GO - Bradford GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Barrie South GO - Allandale Waterfront GO.",
+			"IsCancelled": false
+		}],
+		"Messages": [{
+			"Language": "English",
+			"Text": "Arrived"
+		}, {
+			"Language": "French",
+			"Text": "Arrivé"
+		}],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [{
+				"Language": "English",
+				"Text": "Arrived"
+			}, {
+				"Language": "French",
+				"Text": "Arrivé"
+			}],
+			"StatusCode": "AR",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "5044",
+			"StopName": "Downsview Park GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "29",
+			"StopName": "York University GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "30",
+			"StopName": "Rutherford GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "31",
+			"StopName": "Maple GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "32",
+			"StopName": "King City GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "33",
+			"StopName": "Aurora GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "34",
+			"StopName": "Newmarket GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "866",
+			"StopName": "East Gwillimbury GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "35",
+			"StopName": "Bradford GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "981",
+			"StopName": "Barrie South GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "2500",
+			"StopName": "Allandale Waterfront GO"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549665300000)\/",
+		"Scheduled": "\/Date(1549665300000)\/",
+		"Track": "7",
+		"TripName": null,
+		"Destination": "Allandale Waterfront GO"
+	}, {
+		"RowIndex": 6,
+		"TripNumber": "161",
+		"Expected": "Arrived",
+		"ExtraRemark": "",
+		"Direction": "Eastbound towards Oshawa",
+		"DirectionCd": "Outbound",
+		"DirectionIndex": 2,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "Arrived at Union Station",
+		"ScheduledTime": "17:40",
+		"HasActualTime": false,
+		"IsRunningTrip": true,
+		"Delay": 0,
+		"DelaySec": 0,
+		"DelayDesc": "--",
+		"ArriveIn": "6 minutes",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station - Kipling GO -",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station - Kipling GO -|Dixie GO - Cooksville GO -|Erindale GO - Streetsville GO -|Meadowvale GO - Lisgar GO -|Milton GO.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549665600000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station - Kipling GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Dixie GO - Cooksville GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Erindale GO - Streetsville GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Meadowvale GO - Lisgar GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Milton GO.",
+			"IsCancelled": false
+		}],
+		"Messages": [{
+			"Language": "English",
+			"Text": "Arrived"
+		}, {
+			"Language": "French",
+			"Text": "Arrivé"
+		}],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [{
+				"Language": "English",
+				"Text": "Arrived"
+			}, {
+				"Language": "French",
+				"Text": "Arrivé"
+			}],
+			"StatusCode": "AR",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "551",
+			"StopName": "Kipling GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "552",
+			"StopName": "Dixie GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "553",
+			"StopName": "Cooksville GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "554",
+			"StopName": "Erindale GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "555",
+			"StopName": "Streetsville GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "556",
+			"StopName": "Meadowvale GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "959",
+			"StopName": "Lisgar GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "557",
+			"StopName": "Milton GO"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549665600000)\/",
+		"Scheduled": "\/Date(1549665600000)\/",
+		"Track": "2",
+		"TripName": "Union Station 17:40 - Milton GO 18:40",
+		"Destination": "Milton GO"
+	}, {
+		"RowIndex": 7,
+		"TripNumber": "925",
+		"Expected": "On Time",
+		"ExtraRemark": "",
+		"Direction": "Eastbound towards Oshawa",
+		"DirectionCd": "Outbound",
+		"DirectionIndex": 2,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "On Time",
+		"ScheduledTime": "17:40",
+		"HasActualTime": true,
+		"IsRunningTrip": false,
+		"Delay": 0,
+		"DelaySec": 0,
+		"DelayDesc": "--",
+		"ArriveIn": "6 minutes",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station - Exhibition GO -",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station - Exhibition GO -|Mimico GO - Long Branch GO -|Port Credit GO - Clarkson GO -|Oakville GO - Bronte GO -|Appleby GO - Burlington GO -|Aldershot GO.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549665600000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station - Exhibition GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Mimico GO - Long Branch GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Port Credit GO - Clarkson GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Oakville GO - Bronte GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Appleby GO - Burlington GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Aldershot GO.",
+			"IsCancelled": false
+		}],
+		"Messages": [],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "11",
+			"StopName": "Exhibition GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "10",
+			"StopName": "Mimico GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "9",
+			"StopName": "Long Branch GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "8",
+			"StopName": "Port Credit GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "7",
+			"StopName": "Clarkson GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "6",
+			"StopName": "Oakville GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "5",
+			"StopName": "Bronte GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "4",
+			"StopName": "Appleby GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "3",
+			"StopName": "Burlington GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "2",
+			"StopName": "Aldershot GO"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549665600000)\/",
+		"Scheduled": "\/Date(1549665600000)\/",
+		"Track": "3",
+		"TripName": null,
+		"Destination": "Aldershot GO"
+	}, {
+		"RowIndex": 8,
+		"TripNumber": "726",
+		"Expected": "17:47",
+		"ExtraRemark": "",
+		"Direction": "Eastbound towards Oshawa",
+		"DirectionCd": "Outbound",
+		"DirectionIndex": 2,
+		"DepartTxt": null,
+		"ArriveTxt": null,
+		"DetailTxt": "17:47",
+		"ScheduledTime": "17:40",
+		"HasActualTime": true,
+		"IsRunningTrip": false,
+		"Delay": 7,
+		"DelaySec": 420,
+		"DelayDesc": "7 minutes",
+		"ArriveIn": "13 minutes",
+		"ServiceCd": "21",
+		"StoppingAt": "Union Station - Danforth GO -",
+		"StoppingAtIsCancelled": false,
+		"StopListString": "|Union Station - Danforth GO -|Scarborough GO - Eglinton GO -|Guildwood GO - Rouge Hill GO -|Pickering GO - Ajax GO -|Whitby GO - Oshawa GO.",
+		"UnionArrivePlatform": null,
+		"UnionDepartPlatform": null,
+		"UnionArrivalDepartureTime": null,
+		"UnionPlatformActualOverrided": false,
+		"TrackActualOverrided": false,
+		"StopAtIndex": 0,
+		"TripCancelled": false,
+		"EstimatedArrival": "\/Date(1549666020000)\/",
+		"StatusTimeStamp": "2/8/2019 5:33:03 PM",
+		"OnGridDisplayed": false,
+		"StoppingAtList": [{
+			"StopDisplay": "Union Station - Danforth GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Scarborough GO - Eglinton GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Guildwood GO - Rouge Hill GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Pickering GO - Ajax GO -",
+			"IsCancelled": false
+		}, {
+			"StopDisplay": "Whitby GO - Oshawa GO.",
+			"IsCancelled": false
+		}],
+		"Messages": [],
+		"Remarks": [],
+		"StopsList": [{
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "907",
+			"StopName": "Union Station"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "12",
+			"StopName": "Danforth GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "13",
+			"StopName": "Scarborough GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "14",
+			"StopName": "Eglinton GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "15",
+			"StopName": "Guildwood GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "16",
+			"StopName": "Rouge Hill GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "914",
+			"StopName": "Pickering GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "18",
+			"StopName": "Ajax GO"
+		}, {
+			"StatusText": [],
+			"StatusCode": "",
+			"StopCode": "19",
+			"StopName": "Whitby GO"
+		}, {
+			"StatusText": [{
+				"Language": "English",
+				"Text": "Departed"
+			}, {
+				"Language": "French",
+				"Text": "Quitté la gare"
+			}],
+			"StatusCode": "DP",
+			"StopCode": "20",
+			"StopName": "Oshawa GO"
+		}],
+		"TrackAttr": {
+			"Background": null,
+			"Foreground": null,
+			"Blink": false,
+			"Bold": false,
+			"Italics": false,
+			"Underline": false
+		},
+		"Actual": "\/Date(1549666020000)\/",
+		"Scheduled": "\/Date(1549665600000)\/",
+		"Track": "13",
+		"TripName": null,
+		"Destination": "Oshawa GO"
+	}],
+	"S4Messages": [],
+	"Messages": null
+}

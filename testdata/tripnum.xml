@@ -1,0 +1,64 @@
+<!-- <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ReturnValueOfListOfInServiceTripPublic" nillable="true" type="ReturnValueOfListOfInServiceTripPublic" />
+  <xs:complexType name="ReturnValueOfListOfInServiceTripPublic">
+    <xs:complexContent mixed="false">
+      <xs:extension base="GOBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Data" type="ArrayOfInServiceTripPublic" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GOBase">
+    <xs:attribute name="ErrCode" type="xs:int" use="required" />
+    <xs:attribute name="ErrMsg" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="ArrayOfInServiceTripPublic">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InServiceTripPublic" nillable="true" type="InServiceTripPublic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InServiceTripPublic">
+    <xs:attribute name="Corridor" type="xs:string" />
+    <xs:attribute name="DelayMemo" type="xs:string" />
+    <xs:attribute name="DelaySeconds" type="xs:int" use="required" />
+    <xs:attribute name="EndStation" type="xs:string" />
+    <xs:attribute name="EndTime" type="xs:string" />
+    <xs:attribute name="EquipmentCode" type="xs:string" />
+    <xs:attribute name="InStation" type="xs:string" />
+    <xs:attribute name="Latitude" type="xs:float" use="required" />
+    <xs:attribute name="Longitude" type="xs:float" use="required" />
+    <xs:attribute name="ModifiedDate" type="xs:dateTime" use="required" />
+    <xs:attribute name="Service" type="xs:string" />
+    <xs:attribute name="Source" type="xs:string" />
+    <xs:attribute name="StartStation" type="xs:string" />
+    <xs:attribute name="StartTime" type="xs:string" />
+    <xs:attribute name="ToolTipText" type="xs:string" />
+    <xs:attribute name="TripNumber" type="xs:string" />
+    <xs:attribute name="TripName" type="xs:string" />
+    <xs:attribute name="CorridorCode" type="xs:string" />
+    <xs:attribute name="DelayDisplay" type="xs:string" />
+    <xs:attribute name="DelayMinute" type="xs:int" use="required" />
+    <xs:attribute name="Platform" type="xs:string" />
+    <xs:attribute name="Destination" type="xs:string" />
+    <xs:attribute name="Express" type="xs:boolean" use="required" />
+    <xs:attribute name="TrainMeet" type="xs:boolean" use="required" />
+    <xs:attribute name="IsRunningTrip" type="xs:boolean" use="required" />
+    <xs:attribute name="Detail" type="xs:string" />
+    <xs:attribute name="ServiceCd" type="xs:string" />
+    <xs:attribute name="DepartDesc" type="xs:string" />
+    <xs:attribute name="TripLabelDesc" type="xs:string" />
+    <xs:attribute name="IsOverlapping" type="xs:boolean" use="required" />
+    <xs:attribute name="ToHideMarker" type="xs:boolean" use="required" />
+    <xs:attribute name="IsEquipmentMove" type="xs:boolean" use="required" />
+    <xs:attribute name="InStationId" type="xs:string" />
+    <xs:attribute name="IsMoving" type="xs:boolean" use="required" />
+  </xs:complexType>
+</xs:schema> -->
+
+<ReturnValueOfListOfInServiceTripPublic ErrCode="2147483647" ErrMsg="String content">
+  <Data>
+    <InServiceTripPublic Corridor="String content" DelayMemo="String content" DelaySeconds="2147483647" EndStation="String content" EndTime="String content" EquipmentCode="String content" InStation="String content" Latitude="1.26743237E+15" Longitude="1.26743237E+15" ModifiedDate="1999-05-31T11:20:00" Service="String content" Source="String content" StartStation="String content" StartTime="String content" ToolTipText="String content" TripNumber="String content" TripName="String content" CorridorCode="String content" DelayDisplay="String content" DelayMinute="2147483647" Platform="String content" Destination="String content" Express="true" TrainMeet="true" IsRunningTrip="true" Detail="String content" ServiceCd="String content" DepartDesc="String content" TripLabelDesc="String content" IsOverlapping="true" ToHideMarker="true" IsEquipmentMove="true" InStationId="String content" IsMoving="true" />
+    <InServiceTripPublic Corridor="String content" DelayMemo="String content" DelaySeconds="2147483647" EndStation="String content" EndTime="String content" EquipmentCode="String content" InStation="String content" Latitude="1.26743237E+15" Longitude="1.26743237E+15" ModifiedDate="1999-05-31T11:20:00" Service="String content" Source="String content" StartStation="String content" StartTime="String content" ToolTipText="String content" TripNumber="String content" TripName="String content" CorridorCode="String content" DelayDisplay="String content" DelayMinute="2147483647" Platform="String content" Destination="String content" Express="true" TrainMeet="true" IsRunningTrip="true" Detail="String content" ServiceCd="String content" DepartDesc="String content" TripLabelDesc="String content" IsOverlapping="true" ToHideMarker="true" IsEquipmentMove="true" InStationId="String content" IsMoving="true" />
+  </Data>
+</ReturnValueOfListOfInServiceTripPublic>
