@@ -11,7 +11,7 @@ var(
 	"LW" : LW,
 	"LE" : LE,
 	"MI" : MI,
-	"KI" : KI,
+	"GT" : GT,
 	"RH" : RH,
 	"BR" : BR,
 	"ST" : ST,
