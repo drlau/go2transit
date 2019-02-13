@@ -69,6 +69,7 @@ const (
 
 	// Stouffville Line
 	// Danforth
+	// Scarborough
 	Kennedy="728"
 	Agincourt="39"
 	Milliken="40"
