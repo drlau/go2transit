@@ -1,86 +1,87 @@
 package go2transit
 
 const (
-	// LW
-	HAMILTONGOCENTER="1"
-	ALDERSHOT="2"
-	BURLINGTON="3"
-	APPLEBY="4"
-	BRONTE="5"
-	OAKVILLE="6"
-	CLARKSON="7"
-	PORTCREDIT="8"
-	LONGBRANCH="9"
-	MIMICO="10"
-	EXHIBITION="11"
+	// Lakeshore West Line
+	HamiltonGOCenter="1"
+	Aldershot="2"
+	Burlington="3"
+	Appleby="4"
+	Bronte="5"
+	Oakville="6"
+	Clarkson="7"
+	PortCredit="8"
+	LongBranch="9"
+	Mimico="10"
+	Exhibition="11"
 
-	// LE
-	DANFORTH="12"
-	SCARBOROUGH="13"
-	EGLINTON="14"
-	GUILDWOOD="15"
-	ROUGEHILL="16"
-	PICKERING="914"
-	AJAX="18"
-	WHITBY="19"
-	OSHAWA="20"
+	// Lakeshore East Line
+	Danforth="12"
+	Scarborough="13"
+	Eglinton="14"
+	Guildwood="15"
+	RougeHill="16"
+	Pickering="914"
+	Ajax="18"
+	Whitby="19"
+	Oshawa="20"
 
-	// MI
-	KIPLING="551"
-	DIXIE="552"
-	COOKSVILLE="553"
-	ERINDALE="554"
-	STREETSVILLE="555"
-	MEADOWVALE="556"
-	LISGAR="959"
-	MILTON="557"
+	// Milton Line
+	Kipling="551"
+	Dixie="552"
+	Cooksville="553"
+	Erindale="554"
+	Streetsville="555"
+	Meadowvale="556"
+	Lisgar="959"
+	Milton="557"
 
-	// GT
-	BLOOR="22"
-	WESTON="23"
-	ETOBICOKENORTH="24"
-	MALTON="25"
-	BRAMALEA="26"
-	BRAMPTON="27"
-	MOUNTPLEASANT="674"
-	GEORGETOWN="28"
-	ACTON="2100"
-	GUELPHCENTRAL="2200"
-	KITCHENER="2300"
+	// Kitchener Line
+	Bloor="22"
+	Weston="23"
+	EtobicokeNorth="24"
+	Malton="25"
+	Bramalea="26"
+	Brampton="27"
+	MountPleasant="674"
+	Georgetown="28"
+	Acton="2100"
+	GuelphCentral="2200"
+	Kitchener="2300"
 
-	// RH
-	ORIOLE="676"
-	OLDCUMMER="36"
-	LANGSTAFF="37"
-	RICHMONDHILL="38"
-	GORMLEY="5041"
+	// Richmond Hill Line
+	Oriole="676"
+	OldCummer="36"
+	Langstaff="37"
+	RichmondHill="38"
+	Gormley="5041"
 
-	// BR
-	RUTHERFORD="30"
-	MAPLE="31"
-	KINGCITY="32"
-	AURORA="33"
-	NEWMARKET="34"
-	EASTGWILLIMBURY="866"
-	BRADFORD="35"
-	BARRIESOUTH="981"
-	ALLANDALEWATERFRONT="2500"
-	DOWNSVIEWPARK="5044"
+	// Barrie Line
+	Rutherford="30"
+	Maple="31"
+	KingCity="32"
+	Aurora="33"
+	Newmarket="34"
+	EastGwillimbury="866"
+	Bradford="35"
+	BarrieSouth="981"
+	AllandaleWaterfront="2500"
+	DownsviewPark="5044"
 
-	// ST
-	// DANFORTH
-	KENNEDY="728"
-	AGINCOURT="39"
-	MILLIKEN="40"
-	UNIONVILLE="41"
-	CENTENNIAL="42"
-	MARKHAM="43"
-	MOUNTJOY="901"
-	STOUFFVILLE="45"
-	LINCOLNVILLE="727"
+	// Stouffville Line
+	// Danforth
+	Kennedy="728"
+	Agincourt="39"
+	Milliken="40"
+	Unionville="41"
+	Centennial="42"
+	Markham="43"
+	MountJoy="901"
+	Stouffville="45"
+	Lincolnville="727"
 
-	UNIONSTATION="907"
+	UnionStation="907"
 
+	// ServiceCds for corridor
 	LW="01"
 	LE="09"
 	MI="21"
@@ -89,6 +90,16 @@ const (
 	BR="65"
 	ST="71"
 
-	INBOUND="Inbound"
-	OUTBOUND="Outbound"
+	// Extra aliases for Corridors
+	LakeshoreWestLine=LW
+	LakeshoreEastLine=LE
+	MiltonLine=MI
+	KitchenerLine=GT
+	RichmondHillLine=RH
+	BarrieLine=BR
+	StouffvilleLine=ST
+
+	// Directions
+	Inbound="Inbound"
+	Outbound="Outbound"
 )

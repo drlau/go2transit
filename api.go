@@ -47,7 +47,7 @@ func (g *GoTransitClient) GetRequest(endpoint string) (response []byte, err erro
 
 func (g *GoTransitClient) GetStationInfo(stationID string) (StationStatuses, error) {
 	// TODO: Remove in favour of JSON, which has more info
-	if stationID == UNIONSTATION {
+	if stationID == UnionStation {
 		// XML Endpoint doesn't support Union, but JSON does
 		return g.GetStationJSONInfo(stationID)
 	}
@@ -93,7 +93,7 @@ func (g *GoTransitClient) GetStationJSONInfo(stationID string) (StationStatuses,
 	// They are formatted as \/Date(epoch time)\/
 	// We only parse EstimatedArrival, so overwrite it to the same format as XML
 	for k, _ := range(stationStatus.StationStatusList) {
-		err = stationStatus.StationStatusList[k].clean()
+		err = stationStatus.StationStatusList[k].correctOutput()
 		if err != nil {
 			return nil, err
 		}
@@ -137,6 +137,6 @@ func (g *GoTransitClient) GetTrainNumberInfo(tripID string) (TrainStatus, error)
 	}
 
 	// We have a valid Train Status, so set the actual ServiceCd
-	parsed.TrainStatusList[0].clean()
+	parsed.TrainStatusList[0].correctOutput()
 	return parsed.TrainStatusList[0], nil
 }
