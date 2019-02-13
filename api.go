@@ -96,28 +96,31 @@ func (g *GoTransitClient) getStationJSONInfo(stationID string) (StationStatuses,
 		return nil, err
 	}
 
+	loc, _ := time.LoadLocation("America/Toronto")
 	// The format of EstimatedArrival, Scheduled and Actual differs from the xml counterpart
 	// They are formatted as \/Date(epoch time)\/
 	// We only parse EstimatedArrival, so overwrite it to the same format as XML
-	for k, _ := range(stationStatus.StationStatusList) {
-		stationStatus := stationStatus.StationStatusList[k]
+	for k := range(stationStatus.StationStatusList) {
+		stationStatus := &stationStatus.StationStatusList[k]
+
 		estimated := epochRegex.FindString(stationStatus.EstimatedArrival)
 		if estimated != "" {
 			i, err := strconv.ParseInt(estimated, 10, 64)
 			if err != nil {
 				return nil, err
 			}
-			loc, _ := time.LoadLocation("America/Toronto")
 			stationStatus.EstimatedArrival = time.Unix(i / 1000,0).In(loc).Format("2006-01-02T15:04:05")
 		} else {
 			return nil, ErrCouldNotFindEpochTime
 		}
-		lastStopIndex := len(stationStatus.StopsList) - 1
 
+		lastStopIndex := len(stationStatus.StopsList) - 1
 		// If there are no stops in the StopList, that means the train service is finished, so quietly continue
 		if lastStopIndex >= 0 {
 			destination := stationStatus.StopsList[lastStopIndex].StopCode
-			stationStatus.ServiceCd = stationToCorridorMapper[destination]
+			if destination != UnionStation {
+				stationStatus.ServiceCd = stationToCorridorMapper[destination]
+			}
 		}
 	}
 
