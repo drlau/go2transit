@@ -9,18 +9,18 @@ import (
 
 func New() (g *GoTransitClient, err error) {
 	g = &GoTransitClient{
-		Debug: true,
+		Debug:    true,
 		Language: "en",
-		Client: &http.Client{Timeout: (20 * time.Second)},
+		Client:   &http.Client{Timeout: (20 * time.Second)},
 	}
 	return
 }
 
 func Nouveau() (g *GoTransitClient, err error) {
 	g = &GoTransitClient{
-		Debug: true,
+		Debug:    true,
 		Language: "fr",
-		Client: &http.Client{Timeout: (20 * time.Second)},
+		Client:   &http.Client{Timeout: (20 * time.Second)},
 	}
 	return
 }

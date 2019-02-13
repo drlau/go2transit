@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"errors"
- 	"io/ioutil"
- 	"log"
+	"io/ioutil"
+	"log"
 	"net/http"
 	"regexp"
 	"strconv"
@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	ErrTripNotFound = errors.New("Could not find trip. It may be not running at the moment.")
+	ErrTripNotFound          = errors.New("Could not find trip. It may be not running at the moment.")
 	ErrCouldNotFindEpochTime = errors.New("Could not parse Epoch time out of API return value.")
 
 	epochRegex = regexp.MustCompile("[0-9]{13}")
@@ -100,7 +100,7 @@ func (g *GoTransitClient) getStationJSONInfo(stationID string) (StationStatuses,
 	// The format of EstimatedArrival, Scheduled and Actual differs from the xml counterpart
 	// They are formatted as \/Date(epoch time)\/
 	// We only parse EstimatedArrival, so overwrite it to the same format as XML
-	for k := range(stationStatus.StationStatusList) {
+	for k := range stationStatus.StationStatusList {
 		stationStatus := &stationStatus.StationStatusList[k]
 
 		estimated := epochRegex.FindString(stationStatus.EstimatedArrival)
@@ -109,7 +109,7 @@ func (g *GoTransitClient) getStationJSONInfo(stationID string) (StationStatuses,
 			if err != nil {
 				return nil, err
 			}
-			stationStatus.EstimatedArrival = time.Unix(i / 1000,0).In(loc).Format("2006-01-02T15:04:05")
+			stationStatus.EstimatedArrival = time.Unix(i/1000, 0).In(loc).Format("2006-01-02T15:04:05")
 		} else {
 			return nil, ErrCouldNotFindEpochTime
 		}
