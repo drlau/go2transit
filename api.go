@@ -7,10 +7,16 @@ import (
  	"io/ioutil"
  	"log"
 	"net/http"
+	"regexp"
+	"strconv"
+	"time"
 )
 
 var (
 	ErrTripNotFound = errors.New("Could not find trip. It may be not running at the moment.")
+	ErrCouldNotFindEpochTime = errors.New("Could not parse Epoch time out of API return value.")
+
+	epochRegex = regexp.MustCompile("[0-9]{13}")
 )
 
 func (g *GoTransitClient) GetRequest(endpoint string) (response []byte, err error) {
@@ -46,10 +52,9 @@ func (g *GoTransitClient) GetRequest(endpoint string) (response []byte, err erro
 }
 
 func (g *GoTransitClient) GetStationInfo(stationID string) (StationStatuses, error) {
-	// TODO: Remove in favour of JSON, which has more info
 	if stationID == UnionStation {
 		// XML Endpoint doesn't support Union, but JSON does
-		return g.GetStationJSONInfo(stationID)
+		return g.getStationJSONInfo(stationID)
 	}
 	url := EndpointStationStatus(stationID)
 
@@ -65,11 +70,13 @@ func (g *GoTransitClient) GetStationInfo(stationID string) (StationStatuses, err
 	return parsed.StationStatusList, nil
 }
 
-func (g *GoTransitClient) GetStationJSONInfo(stationID string) (StationStatuses, error) {
+// All the information retrieved from this endpoint can be retrieved from the XML endpoint
+// However, the one advantage of this endpoint is that this one works for Union
+// Due to small differences and bugs with the JSON endpoint, this should be only called with Union
+// Thus, this endpoint will not be exported.
+func (g *GoTransitClient) getStationJSONInfo(stationID string) (StationStatuses, error) {
 	// This endpoint doesn't actually care about the serviceID but still requires one
 	// It does however set the ServiceCd of all the results to the specified one in the query
-	// TODO: Need to map the stationIDs to ServiceCds
-	// Also, need a good way to map inbound trains to lines(in the case of Union)
 	url := EndpointStationStatusJSON(LW, stationID, g.Language)
 
 	response, err := g.GetRequest(url)
@@ -93,9 +100,24 @@ func (g *GoTransitClient) GetStationJSONInfo(stationID string) (StationStatuses,
 	// They are formatted as \/Date(epoch time)\/
 	// We only parse EstimatedArrival, so overwrite it to the same format as XML
 	for k, _ := range(stationStatus.StationStatusList) {
-		err = stationStatus.StationStatusList[k].correctOutput()
-		if err != nil {
-			return nil, err
+		stationStatus := stationStatus.StationStatusList[k]
+		estimated := epochRegex.FindString(stationStatus.EstimatedArrival)
+		if estimated != "" {
+			i, err := strconv.ParseInt(estimated, 10, 64)
+			if err != nil {
+				return nil, err
+			}
+			loc, _ := time.LoadLocation("America/Toronto")
+			stationStatus.EstimatedArrival = time.Unix(i / 1000,0).In(loc).Format("2006-01-02T15:04:05")
+		} else {
+			return nil, ErrCouldNotFindEpochTime
+		}
+		lastStopIndex := len(stationStatus.StopsList) - 1
+
+		// If there are no stops in the StopList, that means the train service is finished, so quietly continue
+		if lastStopIndex >= 0 {
+			destination := stationStatus.StopsList[lastStopIndex].StopCode
+			stationStatus.ServiceCd = stationToCorridorMapper[destination]
 		}
 	}
 
@@ -136,7 +158,7 @@ func (g *GoTransitClient) GetTrainNumberInfo(tripID string) (TrainStatus, error)
 		return TrainStatus{}, ErrTripNotFound
 	}
 
-	// We have a valid Train Status, so set the actual ServiceCd
-	parsed.TrainStatusList[0].correctOutput()
+	// We have a valid Train Status, so set the actual ServiceCd using the Corridor Code
+	parsed.TrainStatusList[0].ServiceCd = corridorToServiceCdMapper[parsed.TrainStatusList[0].CorridorCode]
 	return parsed.TrainStatusList[0], nil
 }

@@ -33,12 +33,14 @@ func (s StationStatuses) NextTrainTime(direction string) (string, error) {
 func (s StationStatuses) NextTrainTimeByDestination(destination string) (string, error) {
 	// There's nothing we can do about this slice loop
 	for _, train := range(s) {
-		// See if we can change how this stop list gets unmarshalled
-		// If it can be unmarshalled into a map, finding a trip should be much easier
-		// Also, changes performance from O(n^2) to O(n)
-		for _, stop := range(train.StopsList) {
-			if stop.StopCode == destination {
-				return train.EstimatedArrival, nil
+		if !train.TripCancelled {
+			// See if we can change how this stop list gets unmarshalled
+			// If it can be unmarshalled into a map, finding a trip should be much easier
+			// Also, changes performance from O(n^2) to O(n)
+			for _, stop := range(train.StopsList) {
+				if stop.StopCode == destination {
+					return train.EstimatedArrival, nil
+				}
 			}
 		}
 	}

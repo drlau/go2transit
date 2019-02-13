@@ -63,9 +63,9 @@ type StationStatus struct {
 	Remarks []GOVisualMessageText `xml:"Remarks>GOVisualMessageText" json:"Remarks"`
 	StopsList []Stop `xml:"StopsList>GOStopMessage" json:"StopsList"`
 	StoppingAtList []StoppingAt `xml:"StoppingAtList>StoppingAtDisplay" json:"StoppingAtList"`
-	Track string `json:"Track,omitempty"`
-	TripName string `json:"TripName,omitempty"`
-	Destination string `json:"Destination,omitempty"`
+	Track string `xml:"Track,attr,omitempty" json:"Track,omitempty"`
+	TripName string `xml:"TripName,attr,omitempty" json:"TripName,omitempty"`
+	Destination string `xml:"Destination,attr,omitempty" json:"Destination,omitempty"`
 }
 
 type StationStatuses []StationStatus
