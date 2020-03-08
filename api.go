@@ -19,7 +19,7 @@ var (
 	epochRegex = regexp.MustCompile("[0-9]{13}")
 )
 
-func (g *GoTransitClient) GetRequest(endpoint string) (response []byte, err error) {
+func (g *GoTransitClient) Get(endpoint string) (response []byte, err error) {
 	req, err := http.NewRequest("GET", endpoint, nil)
 	if err != nil {
 		return
@@ -58,7 +58,7 @@ func (g *GoTransitClient) GetStationInfo(stationID string) (StationStatuses, err
 	}
 	url := EndpointStationStatus(stationID)
 
-	response, err := g.GetRequest(url)
+	response, err := g.Get(url)
 	if err != nil {
 		return nil, err
 	}
@@ -72,14 +72,13 @@ func (g *GoTransitClient) GetStationInfo(stationID string) (StationStatuses, err
 
 // All the information retrieved from this endpoint can be retrieved from the XML endpoint
 // However, the one advantage of this endpoint is that this one works for Union
-// Due to small differences and bugs with the JSON endpoint, this should be only called with Union
-// Thus, this endpoint will not be exported.
+// Due to small differences and bugs with the JSON endpoint, this should be only called with Union.
 func (g *GoTransitClient) getStationJSONInfo(stationID string) (StationStatuses, error) {
 	// This endpoint doesn't actually care about the serviceID but still requires one
 	// It does however set the ServiceCd of all the results to the specified one in the query
 	url := EndpointStationStatusJSON(LW, stationID, g.Language)
 
-	response, err := g.GetRequest(url)
+	response, err := g.Get(url)
 	if err != nil {
 		return nil, err
 	}
@@ -130,7 +129,7 @@ func (g *GoTransitClient) getStationJSONInfo(stationID string) (StationStatuses,
 func (g *GoTransitClient) GetTrainLineInfo(serviceID string) ([]TrainStatus, error) {
 	url := EndpointTripLocation(serviceID, g.Language)
 
-	response, err := g.GetRequest(url)
+	response, err := g.Get(url)
 	if err != nil {
 		return nil, err
 	}
@@ -148,7 +147,7 @@ func (g *GoTransitClient) GetTrainNumberInfo(tripID string) (TrainStatus, error)
 	// Put Lakeshore West as a placeholder
 	url := EndpointTripNum(LW, tripID, g.Language)
 
-	response, err := g.GetRequest(url)
+	response, err := g.Get(url)
 	if err != nil {
 		return TrainStatus{}, err
 	}

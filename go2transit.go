@@ -5,6 +5,12 @@ import (
 	"time"
 )
 
+type GoTransitClient struct {
+	Debug    bool
+	Language string
+	Client   *http.Client
+}
+
 // const VERSION = "0.0.1"
 
 func New() (g *GoTransitClient, err error) {
